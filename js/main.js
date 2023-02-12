@@ -58,3 +58,6 @@
     
 })(jQuery);
 
+// Your web app's Firebase configuration
+
+

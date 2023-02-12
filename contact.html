@@ -38,13 +38,13 @@
      <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
+                <!-- <div class="d-inline-flex align-items-center">
                     <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
                     <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
                     <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
                     <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
                     <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
-                </div>
+                </div> -->
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
@@ -130,42 +130,39 @@
         </div>
     </div>
     <br>
-    <!-- Page Header End -->
-
-
-    <!-- Contact Start -->
+   
     <div class="container-fluid bg-secondary px-0">
         <div class="row g-0">
-            <div class="col-lg-6 py-6 px-5">
+            <div class="col-lg-6 py-6 px-5" >
                 <h1 class="display-5 mb-4">Contact For Any Queries</h1>
-                <form>
+                <form method="post" name="contact_form">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <input type="text" class="form-control" id="form-floating-1" id="name" name="name" placeholder="John Doe">
                                 <label for="form-floating-1">Full Name</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="form-floating-2" id="email"  name="email" placeholder="name@example.com">
                                 <label for="form-floating-2">Email address</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-3" placeholder="Subject">
+                                <input type="text" class="form-control" id="form-floating-3" id="Subject" name="Subject" placeholder="Subject">
                                 <label for="form-floating-3">Subject</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
+                                <textarea class="form-control Message" placeholder="Message" name="Message" id="form-floating-4" style="height: 150px"></textarea>
                                 <label for="form-floating-4">Message</label>
                               </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                            <button class="btn btn-primary w-100 py-3" type="submit" onclick="submit()">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -237,21 +234,23 @@
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
             <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="">Dayanand Dongare</a></p>
     </div>
-    <!-- Footer End -->
+ 
 
 
-    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
 
-    <!-- Template Javascript -->
+    <script src="./js/emails.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
 </body>
 
